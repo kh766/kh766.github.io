@@ -1,0 +1,94 @@
+body{
+
+    height: 100vh;
+}
+
+article{
+
+    grid-area: art;
+    background-color:pink;
+}
+
+#länk{
+    grid-area: lä;
+    background-color: antiquewhite;
+}
+
+#b1{
+    grid-area: b1;
+    background-color: rgb(65, 95, 95);
+    
+}
+
+#b2{
+    grid-area: b2;
+    background-color: rgb(211, 225, 211);
+}
+header{
+    grid-area:h;
+    background-color: coral;
+}
+
+main{
+    grid-area: m;
+    background-color: aqua;
+}
+
+aside{
+    grid-area: as;
+    background-color: pink;
+}
+
+nav{
+    grid-area: n;
+    background-color: bisque;
+
+}
+
+footer{
+    grid-area: f;
+    background-color: gold;
+}
+
+
+#container{
+    display:grid; 
+    height: 100%;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 40% 50% 30% 45% 20%;
+    gap: 5px;
+    grid-template-areas: 
+
+
+
+    " h h h  "
+    " n n m  "
+    " as lä art   "
+    " b1 b1 b2  "
+    " f f f  "
+    
+}
+
+@media screen and (max-width:800px){
+
+    #container{
+
+        grid-template-rows: 30% 50% 50% 50% 50% 50% 50% 30%;
+
+        grid-template-areas: 
+
+        " h h h "
+        " m m m "
+        " n n n "
+        " as as lä "
+        " art art art "
+        " b1 b1 b1 "
+        " b2 b2 b2"
+        " f f f "; 
+    }
+
+
+
+
+
+}
