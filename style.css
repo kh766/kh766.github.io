@@ -1,17 +1,68 @@
 body{
 
-    height: 100vh;
+   height:100vh;
 }
+
+.sprite {
+    background-image: url(img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -45px -5px;
+}
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -85px -5px;
+}
+
+.sprite-pexels-introspectivedsgn-12920296 {
+    width: 300px;
+    height: 200px;
+    background-position: -5px -45px;
+}
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -125px -5px;
+}
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -165px -5px;
+}
+
+
+
 
 article{
 
     grid-area: art;
-    background-color:pink;
+    background-color:rgb(116, 68, 80);
 }
 
 #länk{
     grid-area: lä;
-    background-color: antiquewhite;
+    background-color: rgb(190, 177, 160);
+
+}
+
+ .responsive {
+  width: 100%;
+  height: auto;
 }
 
 #b1{
@@ -20,9 +71,14 @@ article{
     
 }
 
+#responsive{
+  width: 100%;
+  height: auto;
+}
+
 #b2{
     grid-area: b2;
-    background-color: rgb(211, 225, 211);
+    background-color: rgb(71, 179, 71);
 }
 header{
     grid-area:h;
@@ -37,11 +93,13 @@ main{
 aside{
     grid-area: as;
     background-color: pink;
+   
 }
+
 
 nav{
     grid-area: n;
-    background-color: bisque;
+    background-color: rgb(197, 175, 150);
 
 }
 
@@ -55,32 +113,33 @@ footer{
     display:grid; 
     height: 100%;
     grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 40% 50% 30% 45% 20%;
+    grid-template-rows: 40% 55% 30% 52% 40%;
     gap: 5px;
     grid-template-areas: 
 
 
 
     " h h h  "
-    " n n m  "
-    " as lä art   "
-    " b1 b1 b2  "
+    " lä lä m  "
+    " as n art "
+    " b1 b1 b2 "
     " f f f  "
     
 }
+
 
 @media screen and (max-width:800px){
 
     #container{
 
-        grid-template-rows: 30% 50% 50% 50% 50% 50% 50% 30%;
+        grid-template-rows: 40% 70% 70% 70% 70% 75% 75% 60%;
 
         grid-template-areas: 
 
         " h h h "
         " m m m "
-        " n n n "
-        " as as lä "
+        " lä lä lä "
+        " as as n "
         " art art art "
         " b1 b1 b1 "
         " b2 b2 b2"
