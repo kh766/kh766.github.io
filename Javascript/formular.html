@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <form id="ff">
+            <label for="namnruta">ange namn</label>
+            <input id="namnruta" type="text" value="hej">
+            <button type="submit">send form </button>
+
+
+        </form>
+
+
+
+        <div id="textruta">
+
+        </div>
+        <script>
+
+        
+
+            let form =document.getElementById("ff");
+
+
+            form.addEventListener("submit", function(e){
+               
+                e.preventDefault();    
+                let namn= document.getElementById("namnruta").value;    
+                
+               document.getElementById("textruta").innerHTML=namn;
+            });
+
+
+
+
+        </script>
+
+
+
+</body>
+</html>
