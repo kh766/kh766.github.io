@@ -7,5 +7,32 @@
 </head>
 <body>
     
+    <button id="knapp1">röd</button>
+    <button id="knapp2">grön</button>
+    <div id="textruta"></div>
+    
+
+
+    <script>
+        // nedan finner du en hit kod som kommer att leda till att man kan klicka på knappen.
+        
+        let knapp1 = document.getElementById("knapp1");
+        let knapp2 = document.getElementById("knapp2");
+        let textruta = document.getElementById("textruta");
+
+        knapp1.addEventListener("click", function() {
+        textruta.innerHTML = "stopp";
+
+     });
+
+        knapp2.addEventListener("click", function() { 
+        textruta.innerHTML = "gå";
+
+
+
+
+    });
+        
+    </script>
 </body>
 </html>

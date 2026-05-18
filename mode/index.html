@@ -1,0 +1,132 @@
+    <!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Easy style AB - ett mode företag som stylar din outfit </title>
+    <meta name="description" content=" Easy style AB som kommer  att hjälpa användare att planera sina outfits och minska stress i vardagen. Genom smarta funktioner ska användaren kunna få inspiration och välja kläder enklare.">
+    <meta name="keywords" content="kläder, mode, easy style, outfit, fashion">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+
+<div id="container">
+    <header id="he">
+       <h1 class="dm-serif-text-regular">Easy Style</h1>
+        <p class="dm-serif-text-regular-italic">
+        Din stil. Din vardag. Enklare mode.
+        </p>
+
+    </header>
+   
+
+    <section id="länk">
+        <img src="img/styling.jpg" alt="din egen stylist som hjälper dig styla din outfits" class="responsive">
+    </section>
+
+
+
+    <main id="ma"> 
+        <h2 class="dm-serif-text-regular">Mode för alla</h2>
+
+        <p class="dm-serif-text-regular-italic">
+            Mode handlar om att uttrycka sin egen stil och känna sig bekväm i det man bär.
+            På Easy Style hittar du moderna kläder som passar både vardag och speciella tillfällen.
+        </p>
+
+        <h2 class="dm-serif-text-regular">Vår stil</h2>
+
+        <p class="dm-serif-text-regular-italic">
+            Vi följer de senaste trenderna och väljer ut kläder som är både snygga och enkla att matcha.
+            Easy Style gör det lättare att skapa outfits med stil varje dag.
+        </p>
+    </main>
+    
+    <article>
+        <h2>Så bygger du en enkel outfit</h2>
+        <p>Börja med basplagg som jeans och t-shirt. Lägg sedan till jacka och skor som passar tillfället.</p>
+    </article> 
+   
+    <nav>
+        <a href="#he">Hem</a>
+        <a href="#ma">Om oss</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="#foot">Kontakt</a>
+    </nav>
+
+    <aside>
+        <h3>Dagens outfit</h3>
+        <p>Vit skjorta, blå jeans och sneakers passar perfekt till vardagen.</p>
+    </aside>
+
+    <section id="b1">
+        <img src="img/mode,inspo.jpg" alt="Kläder på galge" class="responsive">
+    </section>
+    
+   <section id="b2">
+
+    <img src="img/kläder.jpg" alt="Modebild" class="responsive">
+        <div class="b2-text">
+    <h2>Utforska din egen stil</h2>
+        <p>
+        Med Easy Style blir det enklare att skapa outfits som passar dig.
+        </p>
+        <p>
+        Vi tror att mode ska vara enkelt, snyggt och inspirerande.
+        </p>                                
+        </div>
+    </section>
+
+    <section id="FAQ">
+
+        <div class="FAQ-text">
+        <h2>Vanliga frågor (FAQ)</h2>
+
+        <h3>Vilka säljer ni till ?</h3>
+        <p>Vi säljer moderna kläder för dam och herr.</p>
+        <h3>Hur fungerar outfit planner?</h3>
+        <p>Du väljer väder och tillfälle, sedan får du klädtips.</p>
+        <h3>Hur kan man hitta easy style?</h3>
+        <p>Man hittar oss på sociala medier och på våran webbplats</p>
+        </div>
+    </section>
+        <footer id="foot">
+
+            <p><strong>Easy Style AB</strong></p>
+            <p>📍 Sverige Telefon: 070-123 45 67</p>
+            <p>Instagram | TikTok | Gmail</p>
+            <form id="mittFormular">
+    
+    <label>E-post:</label><br>
+    <input type="email" required><br><br>
+
+    
+    <button type="submit">Skicka</button>
+    </form>
+
+    <p id="meddelande"></p>
+
+    <script>
+    let form = document.getElementById("mittFormular");
+    let meddelande = document.getElementById("meddelande");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        meddelande.innerHTML = "Tack!";
+    });
+    </script>
+  
+
+
+        </footer>
+        </div>
+
+    </body>
+    </html>
